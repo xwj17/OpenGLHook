@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HookLib", "HookLib\HookLib.csproj", "{87A9E240-F4B1-49E5-9585-57F7D5B00C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectorFx", "InjectorFx\InjectorFx.csproj", "{CD477072-873A-4B8A-8913-C17F28A7FE18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87A9E240-F4B1-49E5-9585-57F7D5B00C86}.Debug|x64.ActiveCfg = Debug|x64
+		{87A9E240-F4B1-49E5-9585-57F7D5B00C86}.Debug|x64.Build.0 = Debug|x64
+		{87A9E240-F4B1-49E5-9585-57F7D5B00C86}.Release|x64.ActiveCfg = Release|x64
+		{87A9E240-F4B1-49E5-9585-57F7D5B00C86}.Release|x64.Build.0 = Release|x64
+		{CD477072-873A-4B8A-8913-C17F28A7FE18}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CD477072-873A-4B8A-8913-C17F28A7FE18}.Debug|x64.Build.0 = Debug|Any CPU
+		{CD477072-873A-4B8A-8913-C17F28A7FE18}.Release|x64.ActiveCfg = Release|Any CPU
+		{CD477072-873A-4B8A-8913-C17F28A7FE18}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9133A4BD-22BA-4120-B8D1-09B794BA4D69}
+	EndGlobalSection
+EndGlobal
