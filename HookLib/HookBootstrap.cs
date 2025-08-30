@@ -162,10 +162,10 @@ namespace HookLib
         private static readonly object _boxesLock = new object();
         private static List<Box> _latestBoxes = new List<Box>();
 
-        private static byte[] _scratchFull;   // 全屏 RGBA/BGRA 临时
-        private static byte[] _scratchScaled; // 640x640 BGRA (GPU缩放读取)
-        private static byte[] _scratchDetect; // 传入 Detect (可能是屏幕或已缩放)
-        private static byte[] _pboStage;      // 用于 PBO 映射拷贝
+        private static byte[] _scratchFull;
+        private static byte[] _scratchScaled;
+        private static byte[] _scratchDetect;
+        private static byte[] _pboStage;
 
         // 性能
         private static long _lastFrameSwapTicks;
@@ -175,6 +175,12 @@ namespace HookLib
         private static volatile float _lastDetectMs;
         private static volatile int _lastDetectFrameIdx;
         private static long _injectStartTicks = Stopwatch.GetTimestamp();
+
+        // 检测 FPS 统计
+        private static readonly object _detTimesLock = new object();
+        private static readonly Queue<long> _detTimes = new Queue<long>();
+        private static double _detFps; // 一秒窗口内检测完成次数
+        private const double DET_WINDOW_MS = 1000.0;
 
         // 字体
         private static bool _fontReady;
@@ -187,10 +193,10 @@ namespace HookLib
         // PBO
         private static bool _pboReady;
         private static uint _pboA, _pboB;
-        private static int _pboIndex; // 0/1
+        private static int _pboIndex;
         private static bool _pboFailed;
 
-        // FBO (缩放到 640x640)
+        // FBO
         private static bool _fboReady;
         private static uint _fboId;
         private static uint _fboTex;
@@ -277,7 +283,6 @@ namespace HookLib
             }
         }
 
-        // 添加到 HookBootstrap 类内部（例如 EnsureCoreGL 下方或区域 Helpers 内）
         private static void LoadWglAccessors(IntPtr hOGL)
         {
             try
@@ -342,6 +347,7 @@ namespace HookLib
                     lock (_boxesLock) _latestBoxes = boxes;
 
                     UpdateDynamicInterval(boxes.Count);
+                    UpdateDetectionFps(); // 更新检测 FPS
 
                     if (f.FrameIndex < _externalConfig.LogDetailFrames)
                         Logging.Info($"[Detect] Frame={f.FrameIndex} Boxes={boxes.Count} DetMs={_lastDetectMs:F2} EffInt={_effectiveDetectionInterval}");
@@ -350,6 +356,35 @@ namespace HookLib
                 {
                     Logging.Exception("[DetectThread]", ex);
                     Thread.Sleep(10);
+                }
+            }
+        }
+
+        // 统计 1 秒窗口内完成检测次数 => _detFps
+        private static void UpdateDetectionFps()
+        {
+            long now = Stopwatch.GetTimestamp();
+            lock (_detTimesLock)
+            {
+                _detTimes.Enqueue(now);
+                double windowTicks = DET_WINDOW_MS * Stopwatch.Frequency / 1000.0;
+                while (_detTimes.Count > 0 && (now - _detTimes.Peek()) > windowTicks)
+                    _detTimes.Dequeue();
+
+                if (_detTimes.Count >= 2)
+                {
+                    long first = _detTimes.Peek();
+                    long last = 0;
+                    foreach (var t in _detTimes) last = t;
+                    double spanMs = (last - first) * 1000.0 / Stopwatch.Frequency;
+                    if (spanMs > 0.5) // 至少覆盖 0.5ms 避免除零
+                        _detFps = (_detTimes.Count - 1) * 1000.0 / spanMs;
+                    else
+                        _detFps = 0;
+                }
+                else
+                {
+                    _detFps = 0;
                 }
             }
         }
@@ -491,7 +526,6 @@ namespace HookLib
                 bool useGpuScale = _enableGpuPreprocess && !_fboFailed && EnsureFboForScale();
                 if (useGpuScale)
                 {
-                    // Blit 原始缓冲到 640x640 FBO
                     try
                     {
                         _glBindFramebuffer(GL_READ_FRAMEBUFFER, 0);
@@ -505,7 +539,6 @@ namespace HookLib
                             throw new Exception("FBO glReadPixels 失败");
                         bgraOut = _scratchScaled;
                         alreadyResized = true;
-                        // 还原
                         _glBindFramebuffer(GL_READ_FRAMEBUFFER, 0);
                         _glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
                         return true;
@@ -514,18 +547,14 @@ namespace HookLib
                     {
                         Logging.Warn("[Capture] GPU 预处理失败回退: " + ex.Message);
                         _fboFailed = true;
-                        // 继续走全屏路径
                     }
                 }
 
-                // 全屏读取
                 if (_scratchFull == null || _scratchFull.Length != vw * vh * 4)
                     _scratchFull = new byte[vw * vh * 4];
                 if (!ReadPixelsToBuffer(vw, vh, ref _scratchFull))
                     return false;
 
-                // 翻转 + 已是 BGRA? 注意 glReadPixels 使用 GL_BGRA 时行序 origin 在左下，读回来直接是从底到顶
-                // 我们需要转成顶->底; 这里调整
                 if (_scratchDetect == null || _scratchDetect.Length != vw * vh * 4)
                     _scratchDetect = new byte[vw * vh * 4];
 
@@ -561,11 +590,9 @@ namespace HookLib
                     uint cur = (_pboIndex == 0) ? _pboA : _pboB;
                     uint prev = (_pboIndex == 0) ? _pboB : _pboA;
 
-                    // 异步请求
                     _glBindBuffer(GL_PIXEL_PACK_BUFFER, cur);
                     _glReadPixels(0, 0, w, h, GL_BGRA, GL_UNSIGNED_BYTE, IntPtr.Zero);
 
-                    // 取回上一帧
                     _glBindBuffer(GL_PIXEL_PACK_BUFFER, prev);
                     IntPtr ptr = _glMapBuffer(GL_PIXEL_PACK_BUFFER, GL_READ_ONLY);
                     if (ptr != IntPtr.Zero)
@@ -574,12 +601,11 @@ namespace HookLib
                             _pboStage = new byte[bytes];
                         Marshal.Copy(ptr, _pboStage, 0, Math.Min(_pboStage.Length, bytes));
                         _glUnmapBuffer(GL_PIXEL_PACK_BUFFER);
-                        // 拷到 buffer
                         Buffer.BlockCopy(_pboStage, 0, buffer, 0, bytes);
                     }
                     _glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
                     _pboIndex = 1 - _pboIndex;
-                    return true; // 注意第一帧 prev 为空数据，可接受
+                    return true;
                 }
                 catch (Exception ex)
                 {
@@ -588,7 +614,6 @@ namespace HookLib
                 }
             }
 
-            // 同步读取
             unsafe
             {
                 fixed (byte* p = buffer)
@@ -740,11 +765,12 @@ namespace HookLib
                     long now = Stopwatch.GetTimestamp();
                     double runtimeSec = (now - _injectStartTicks) / (double)Stopwatch.Frequency;
                     string timeStr = FormatRuntime(runtimeSec);
-                    double detectMs = _lastDetectMs;
-                    double totalPipelineMs = _captureMs + detectMs + _overlayMs;
-                    if (totalPipelineMs < 0.01) totalPipelineMs = 0.01;
-                    double maxFps = 1000.0 / totalPipelineMs;
-                    string line = $"FPS:{_fpsSmooth:0.0} TIME:{timeStr} MAX:{maxFps:0.0} INT:{_effectiveDetectionInterval}";
+                    double detFpsSnapshot;
+                    lock (_detTimesLock) detFpsSnapshot = _detFps;
+
+                    // 替换原来的 MAX：现在显示一秒检测次数 DET
+                    // 行内容：FPS(渲染) / TIME / DET(检测FPS) / INT(检测间隔)
+                    string line = $"FPS:{_fpsSmooth:0.0} TIME:{timeStr} DET:{detFpsSnapshot:0.0} INT:{_effectiveDetectionInterval}";
                     DrawText(6, 14, line);
 
                     _glDisable?.Invoke(GL_TEXTURE_2D);
