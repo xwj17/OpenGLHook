@@ -1,62 +1,68 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\pcc\\Hook\\OpenGLHook\\",
+  "WorkspaceRootPath": "D:\\pcc\\Hook\\D3D12ManagedHook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|InjectorFx||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD477072-873A-4B8A-8913-C17F28A7FE18}|InjectorFx\\InjectorFx.csproj|D:\\pcc\\Hook\\OpenGLHook\\injectorfx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD477072-873A-4B8A-8913-C17F28A7FE18}|InjectorFx\\InjectorFx.csproj|solutionrelative:injectorfx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\hooklib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\hooklib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\gpuenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\gpuenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\hookbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\hookbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\hookbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\yoloprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD477072-873A-4B8A-8913-C17F28A7FE18}|InjectorFx\\InjectorFx.csproj|D:\\pcc\\Hook\\D3D12ManagedHook\\injectorfx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD477072-873A-4B8A-8913-C17F28A7FE18}|InjectorFx\\InjectorFx.csproj|solutionrelative:injectorfx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\yoloprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\yoloprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\hookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\hookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\hookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\dependencyresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\dependencyresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\dependencyresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\framering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\gpuenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\gpuenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\hooklib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\hooklib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\framering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\framering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\asyncframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\asyncframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\asyncframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\openglhook\\hooklib\\win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|d:\\pcc\\hook\\d3d12managedhook\\hooklib\\win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A9E240-F4B1-49E5-9585-57F7D5B00C86}|HookLib\\HookLib.csproj|solutionrelative:hooklib\\win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD477072-873A-4B8A-8913-C17F28A7FE18}|InjectorFx\\InjectorFx.csproj|d:\\pcc\\hook\\d3d12managedhook\\injectorfx\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +72,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,24 +80,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GpuEnumerator.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\GpuEnumerator.cs",
-              "RelativeDocumentMoniker": "HookLib\\GpuEnumerator.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\GpuEnumerator.cs",
-              "RelativeToolTip": "HookLib\\GpuEnumerator.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAowGkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T13:27:59.001Z",
+              "DocumentIndex": 0,
+              "Title": "InjectorFx",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\InjectorFx\\InjectorFx.csproj",
+              "RelativeDocumentMoniker": "InjectorFx\\InjectorFx.csproj",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\InjectorFx\\InjectorFx.csproj",
+              "RelativeToolTip": "InjectorFx\\InjectorFx.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-29T07:06:59.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "GpuEnumerator.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\GpuEnumerator.cs",
+              "RelativeDocumentMoniker": "HookLib\\GpuEnumerator.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\GpuEnumerator.cs",
+              "RelativeToolTip": "HookLib\\GpuEnumerator.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T13:27:59.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DependencyResolver.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\DependencyResolver.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\DependencyResolver.cs",
               "RelativeDocumentMoniker": "HookLib\\DependencyResolver.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\DependencyResolver.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\DependencyResolver.cs",
               "RelativeToolTip": "HookLib\\DependencyResolver.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowD8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "HookConfig.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookConfig.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookConfig.cs",
               "RelativeDocumentMoniker": "HookLib\\HookConfig.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookConfig.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookConfig.cs",
               "RelativeToolTip": "HookLib\\HookConfig.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwCEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -111,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FrameRing.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\FrameRing.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\FrameRing.cs",
               "RelativeDocumentMoniker": "HookLib\\FrameRing.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\FrameRing.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\FrameRing.cs",
               "RelativeToolTip": "HookLib\\FrameRing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AsyncFrame.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\AsyncFrame.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\AsyncFrame.cs",
               "RelativeDocumentMoniker": "HookLib\\AsyncFrame.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\AsyncFrame.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\AsyncFrame.cs",
               "RelativeToolTip": "HookLib\\AsyncFrame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -135,11 +152,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "YoloProcessor.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\YoloProcessor.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\YoloProcessor.cs",
               "RelativeDocumentMoniker": "HookLib\\YoloProcessor.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\YoloProcessor.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\YoloProcessor.cs",
               "RelativeToolTip": "HookLib\\YoloProcessor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -147,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Box.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Box.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Box.cs",
               "RelativeDocumentMoniker": "HookLib\\Box.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Box.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Box.cs",
               "RelativeToolTip": "HookLib\\Box.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,11 +176,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "HookBootstrap.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookBootstrap.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookBootstrap.cs",
               "RelativeDocumentMoniker": "HookLib\\HookBootstrap.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookBootstrap.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookBootstrap.cs",
               "RelativeToolTip": "HookLib\\HookBootstrap.cs",
               "ViewState": "AgIAAOACAAAAAAAAAAAWwPACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -171,50 +188,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\InjectorFx\\Program.cs",
-              "RelativeDocumentMoniker": "InjectorFx\\Program.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\InjectorFx\\Program.cs",
-              "RelativeToolTip": "InjectorFx\\Program.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAiwI0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T09:55:47.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EntryPoint.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\EntryPoint.cs",
-              "RelativeDocumentMoniker": "HookLib\\EntryPoint.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\EntryPoint.cs",
-              "RelativeToolTip": "HookLib\\EntryPoint.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowB8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T09:39:11.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\InjectorFx\\Program.cs",
+              "RelativeDocumentMoniker": "InjectorFx\\Program.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\InjectorFx\\Program.cs",
+              "RelativeToolTip": "InjectorFx\\Program.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAWwMYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T09:55:47.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EntryPoint.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\EntryPoint.cs",
+              "RelativeDocumentMoniker": "HookLib\\EntryPoint.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\EntryPoint.cs",
+              "RelativeToolTip": "HookLib\\EntryPoint.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T09:39:11.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HookLib.csproj",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookLib.csproj",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookLib.csproj",
               "RelativeDocumentMoniker": "HookLib\\HookLib.csproj",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\HookLib.csproj",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\HookLib.csproj",
               "RelativeToolTip": "HookLib\\HookLib.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-28T08:29:24.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T08:29:24.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "NativeMethods.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\NativeMethods.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\NativeMethods.cs",
               "RelativeDocumentMoniker": "HookLib\\NativeMethods.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\NativeMethods.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\NativeMethods.cs",
               "RelativeToolTip": "HookLib\\NativeMethods.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Logging.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Logging.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Logging.cs",
               "RelativeDocumentMoniker": "HookLib\\Logging.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Logging.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Logging.cs",
               "RelativeToolTip": "HookLib\\Logging.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,11 +248,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Win32.cs",
-              "DocumentMoniker": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Win32.cs",
+              "DocumentMoniker": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Win32.cs",
               "RelativeDocumentMoniker": "HookLib\\Win32.cs",
-              "ToolTip": "D:\\pcc\\Hook\\OpenGLHook\\HookLib\\Win32.cs",
+              "ToolTip": "D:\\pcc\\Hook\\D3D12ManagedHook\\HookLib\\Win32.cs",
               "RelativeToolTip": "HookLib\\Win32.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
